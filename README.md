@@ -1,2 +1,2 @@
 # thomas.design
-Website repo
+Repo for the new version of my personal website. 
