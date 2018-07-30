@@ -1,29 +1,62 @@
 <html>
 
 <head>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" </meta>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
   <title>Thomas Walichiewicz - Product Design</title>
-  <script src="//cdnjs.cloudflare.com/ajax/libs/less.js/3.5.0/less.min.js/"></script>
-  <link rel="stylesheet/less" href="./src/styles/index.less" type="text/css" />
-  <link rel="stylesheet/less" href="./src/styles/layout/layout.less" type="text/css" />
+  <link rel="stylesheet" type="text/css" href="./src/styles/index.css">
+  <link href="https://fonts.googleapis.com/css?family=Merriweather:300,300i,400,400i,700,700i,900,900i" rel="stylesheet">
+</head>
 
 <body>
-  <div class="wrapper">
-    <header>
-      <nav>
-        <ul>
-          <li></li>
-          <li></li>
-          <li></li>
-        </ul>
-      </nav>
-    </header>
-    <content>
-      Hello, world
-    </content>
-    <footer>
-    </footer>
-
+  <div>
+    <div class="row">
+      <div class="col">
+        <div class="marquee">
+          <div class="marquee-nav">
+            <div class="home">
+              <div onclick="window.location.href='/'">
+                TW
+              </div>
+            </div>
+            <div class="links">
+              <div class="button nav current" onclick="window.location.href='/'">
+                Overview
+              </div>
+              <div class="button nav" onclick="window.location.href='https://www.linkedin.com/in/twalichiewicz'">
+                LinkedIn
+              </div>
+          </div>
+          <div class="marquee-content">
+            <h1 class="fadeIn">
+              Thomas<br>Walichiewicz
+            </h1>
+            <p class="fadeIn">
+              A product designer who focuses on the<br> <b>how</b> & <b>why</b> of what makes products successful.
+            </p>
+            <div class="skill-table">
+              <h4>Research</h4>
+              <div class="pill tiny">Customer Interviews</div>
+              <div class="pill tiny">Market Research Analysis</div>
+              <div class="pill tiny">Prototype Testing</div>
+              <div class="pill tiny">Information Architecture</div>
+              <div class="pill tiny">User Journeys</div>
+              <h4>Design</h4>
+              <div class="pill tiny">Style Guide Creation</div>
+              <div class="pill tiny">UX Design</div>
+              <div class="pill tiny">HCI Best Practices</div>
+              <div class="pill tiny">High Fidelity Visual Design</div>
+              <div class="pill tiny">Brand Design</div>
+              <h4>Code</h4>
+              <div class="pill tiny">Front-End Development</div>
+              <div class="pill tiny">Component Library Design</div>
+              <div class="pill tiny">Best-Practices</div>
+              <div class="pill tiny">Deployment Testing</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
   </div>
 </body>
 

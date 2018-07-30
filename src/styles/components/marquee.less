@@ -1,0 +1,41 @@
+@media only screen and (min-width: @width-xs) {
+	.marquee {
+		background: @black;
+		color: @white;
+		height: 100vh;
+		max-width: 100%;
+		text-align: center;
+		.marquee-content {
+			max-width: 600px;
+			margin-top: 6em;
+			margin-left: auto;
+			margin-right: auto;
+			p {
+				font-family: 'Inter UI', Helvetica, Arial, sans-serif;
+				font-weight: 100;
+			}
+		}
+		.marquee-nav {
+			height: 15px;
+			padding: 30px;
+			.home {
+				float: left;
+			}
+			.links {
+				display: inline-flex;
+				float: right;
+			}
+		}
+	}
+}
+@media only screen and (min-width: @width-sm) {
+	.marquee {
+		.marquee-content {
+			margin-top: 15em;
+		}
+	}
+}
+@media only screen and (min-width: @width-md) {
+}
+@media only screen and (min-width: @width-lg) {
+}

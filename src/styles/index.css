@@ -1,0 +1,221 @@
+.flash {
+  -webkit-animation: fade-in 0.2s linear infinite alternate;
+  -moz-animation: fade-in 0.2s linear infinite alternate;
+  animation: fade-in 0.2s linear infinite alternate;
+}
+@-moz-keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@-webkit-keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+.fadeIn {
+  -webkit-animation: fade-in 1.5s ease;
+  -moz-animation: fade-in 1.5s ease;
+  animation: fade-in 1.5s ease;
+}
+@-moz-keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@-webkit-keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@media only screen and (min-width: 0) {
+  body {
+    font-family: 'Merriweather', serif;
+    font-size: 15px;
+  }
+  h1 {
+    display: block;
+    font-size: 3em;
+    font-style: italic;
+    font-weight: 900;
+    line-height: 1em;
+  }
+  h2 {
+    border-bottom: solid 1px #c8c8c8;
+    display: block;
+    font-style: italic;
+    font-weight: 900;
+    line-height: 1.25em;
+    padding-bottom: 6px;
+  }
+  h4 {
+    border-bottom: solid 1px #303030;
+    color: #303030;
+    margin-bottom: 6px;
+    padding-bottom: 6px;
+  }
+  p {
+    line-height: 1.5em;
+  }
+}
+.button {
+  cursor: pointer;
+  display: inline-block;
+  font-family: 'Inter UI', Helvetica, Arial, sans-serif;
+  margin-left: 15px;
+}
+.button.current {
+  border-bottom: solid 1px #ffffff;
+  padding-bottom: 6px;
+}
+.button.nav {
+  background: transparent;
+}
+@media only screen and (min-width: 0) {
+  .marquee {
+    background: #151515;
+    color: #ffffff;
+    height: 100vh;
+    max-width: 100%;
+    text-align: center;
+  }
+  .marquee .marquee-content {
+    max-width: 600px;
+    margin-top: 6em;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .marquee .marquee-content p {
+    font-family: 'Inter UI', Helvetica, Arial, sans-serif;
+    font-weight: 100;
+  }
+  .marquee .marquee-nav {
+    height: 15px;
+    padding: 30px;
+  }
+  .marquee .marquee-nav .home {
+    float: left;
+  }
+  .marquee .marquee-nav .links {
+    display: inline-flex;
+    float: right;
+  }
+}
+@media only screen and (min-width: 544px) {
+  .marquee .marquee-content {
+    margin-top: 15em;
+  }
+}
+.pill {
+  display: inline-flex;
+}
+.pill.tiny {
+  background: #303030;
+  border-radius: 3px;
+  color: #909090;
+  font-family: 'Inter UI', Helvetica, Arial, sans-serif;
+  font-size: 0.6em;
+  padding: 3px;
+  margin: 3px;
+}
+@media only screen and (min-width: 0) and (min-height: 0) {
+  .skill-table {
+    display: none;
+  }
+}
+@media only screen and (min-width: 0) and (min-height: 544px) {
+  .skill-table {
+    bottom: 30px;
+    display: block;
+    text-align: left;
+    left: 30px;
+    position: absolute;
+    right: 30px;
+  }
+}
+@media only screen and (min-width: 0) {
+  html,
+  body {
+    padding: 0;
+    margin: 0;
+  }
+  content {
+    width: 100%;
+    left: 0;
+    margin-right: auto;
+    margin-left: auto;
+    padding-right: 15px;
+    padding-left: 15px;
+    position: absolute;
+    top: 0;
+  }
+  .col {
+    display: inline-block;
+    max-width: 100%;
+    width: 100%;
+  }
+  .col-image {
+    background: url(https://i1.wp.com/photofocus.com/wp-content/uploads/2014/06/screen-shot-2014-06-18-at-5-09-59-pm.png?resize=1278%2C720&ssl=1);
+    background-position: 0 120px;
+    background-repeat: no-repeat;
+  }
+  .poster-text p {
+    line-height: 1.5em;
+  }
+  .row {
+    display: block;
+    height: auto;
+    width: 100%;
+  }
+}
+@media only screen and (min-width: 768px) {
+  .col {
+    display: inline-block;
+  }
+  .col-text {
+    width: 33%;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  .col-image {
+    width: 64%;
+    background: url(https://cdn.macrumors.com/article-new/2017/06/imac_pro_white_background.jpg);
+    background-position: 0 120px;
+    background-repeat: no-repeat;
+  }
+}
+ul.navbar {
+  height: 60px;
+  text-align: center;
+}
+ul.navbar li {
+  display: inline-block;
+}

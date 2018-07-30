@@ -1,0 +1,64 @@
+@import '../../core/core.less';
+@import '../../core/variables/breakpoints.less';
+
+@media only screen and (min-width: @width-xs) {
+	html,
+	body {
+		padding: 0;
+		margin: 0;
+	}
+	content {
+		width: 100%;
+		left: 0;
+		margin-right: auto;
+		margin-left: auto;
+		padding-right: 15px;
+		padding-left: 15px;
+		position: absolute;
+		top: 0;
+	}
+	.col {
+		display: inline-block;
+		max-width: 100%;
+		width: 100%;
+	}
+	.col-image {
+		background: url(https://i1.wp.com/photofocus.com/wp-content/uploads/2014/06/screen-shot-2014-06-18-at-5-09-59-pm.png?resize=1278%2C720&ssl=1);
+		background-position: 0 120px;
+		background-repeat: no-repeat;
+	}
+
+	.poster-text {
+		p {
+			line-height: 1.5em;
+		}
+	}
+	.row {
+		display: block;
+		height: auto;
+		width: 100%;
+	}
+}
+
+@media only screen and (min-width: @width-sm) {
+}
+
+@media only screen and (min-width: @width-md) {
+	.col {
+		display: inline-block;
+	}
+	.col-text {
+		width: 33%;
+		padding-left: 15px;
+		padding-right: 15px;
+	}
+	.col-image {
+		width: 64%;
+		background: url(https://cdn.macrumors.com/article-new/2017/06/imac_pro_white_background.jpg);
+		background-position: 0 120px;
+		background-repeat: no-repeat;
+	}
+}
+
+@media only screen and (min-width: @width-lg) {
+}
