@@ -1,16 +1,38 @@
+button,
 .button {
-	cursor: pointer;
-	display: inline-block;
-	font-family: 'Inter UI', Helvetica, Arial, sans-serif;
-	margin-left: 15px;
-	&.current {
-		border-bottom: solid 1px @white;
-		padding-bottom: 6px;
-	}
-	&.nav {
-		// border: none;
-		background: transparent;
-	}
-	&.outline {
-	}
+  cursor: pointer;
+  display: inline-block;
+  font-family: "Inter UI", Helvetica, Arial, sans-serif;
+  transition: 90ms linear;
+  transition-property: background, box-shadow, color;
+  &.nav {
+    border: none;
+    border-radius: 3px;
+    background: transparent;
+    color: #c8c8c8;
+    font-size: 15px;
+    margin: 0 3px;
+    padding: 12px 9px;
+    &:hover {
+      color: #fff;
+    }
+    &:active {
+    }
+    &.red {
+      background: #e64046;
+      color: #fff;
+      &:hover {
+        background: #b83338;
+      }
+      &:active {
+        background: #8a262a;
+      }
+    }
+    &.current {
+      border-bottom: solid 1px @white;
+      color: #fff;
+    }
+  }
+  &.outline {
+  }
 }
