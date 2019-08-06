@@ -178,21 +178,20 @@ button.nav.current,
     display: none;
   }
 }
-@media only screen and (min-width: 0) and (min-height: 544px) {
+@media only screen and (min-width: 0) {
   .skill-table {
-    bottom: 30px;
     display: block;
+    margin-bottom: 30px;
+    position: relative;
     text-align: left;
-    left: 30px;
-    position: absolute;
-    right: 30px;
   }
 }
 @media only screen and (min-width: 0) {
   html,
   body {
-    padding: 0;
+    background: #151515;
     margin: 0;
+    padding: 0;
   }
   content {
     width: 100%;
