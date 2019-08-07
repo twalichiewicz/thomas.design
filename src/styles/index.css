@@ -136,12 +136,12 @@ button.nav.current,
   }
   .marquee .marquee-content {
     max-width: 600px;
-    margin-top: 6em;
+    margin-top: 9em;
     margin-left: auto;
     margin-right: auto;
   }
   .marquee .marquee-content p {
-    font-family: 'Inter UI', Helvetica, Arial, sans-serif;
+    font-family: "Inter UI", Helvetica, Arial, sans-serif;
     font-weight: 100;
   }
   .marquee .marquee-nav {
@@ -158,7 +158,7 @@ button.nav.current,
 }
 @media only screen and (min-width: 544px) {
   .marquee .marquee-content {
-    margin-top: 15em;
+    margin-top: 12em;
   }
 }
 .pill {
