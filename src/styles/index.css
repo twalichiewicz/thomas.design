@@ -112,6 +112,7 @@ button.nav.red,
 .button.nav.red {
   background: #e64046;
   color: #fff;
+  margin-left: 9px;
 }
 button.nav.red:hover,
 .button.nav.red:hover {
