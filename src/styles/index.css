@@ -58,21 +58,20 @@
 }
 @media only screen and (min-width: 0) {
   body {
-    font-family: 'Merriweather', serif;
+    font-family: -apple-system, BlinkMacSystemFont, Helvetica, Arial, sans-serif, Apple Color Emoji;
     font-size: 15px;
   }
   h1 {
     display: block;
-    font-size: 3em;
-    font-style: italic;
-    font-weight: 900;
+    font-size: 39px;
+    font-weight: 600;
+    letter-spacing: -0.03em;
     line-height: 1em;
   }
   h2 {
     border-bottom: solid 1px #c8c8c8;
     display: block;
-    font-style: italic;
-    font-weight: 900;
+    font-weight: 600;
     line-height: 1.25em;
     padding-bottom: 6px;
   }
@@ -90,7 +89,7 @@ button,
 .button {
   cursor: pointer;
   display: inline-block;
-  font-family: "Inter UI", Helvetica, Arial, sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, Helvetica, Arial, sans-serif, Apple Color Emoji;
   transition: 90ms linear;
   transition-property: background, box-shadow, color;
 }
@@ -133,7 +132,7 @@ button.nav.current,
     color: #ffffff;
     height: 100vh;
     max-width: 100%;
-    text-align: center;
+    text-align: left;
   }
   .marquee .marquee-content {
     max-width: 600px;
@@ -142,7 +141,7 @@ button.nav.current,
     margin-right: auto;
   }
   .marquee .marquee-content p {
-    font-family: "Inter UI", Helvetica, Arial, sans-serif;
+    font-family: -apple-system, BlinkMacSystemFont, Helvetica, Arial, sans-serif, Apple Color Emoji;
     font-weight: 100;
   }
   .marquee .marquee-nav {
@@ -169,7 +168,7 @@ button.nav.current,
   background: #303030;
   border-radius: 3px;
   color: #909090;
-  font-family: "Inter UI", Helvetica, Arial, sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, Helvetica, Arial, sans-serif, Apple Color Emoji;
   font-size: 12px;
   padding: 3px;
   margin: 3px;
