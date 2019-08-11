@@ -67,22 +67,30 @@
     font-weight: 600;
     letter-spacing: -0.03em;
     line-height: 1em;
+    margin-bottom: 12px;
   }
   h2 {
     border-bottom: solid 1px #c8c8c8;
     display: block;
     font-weight: 600;
     line-height: 1.25em;
-    padding-bottom: 6px;
+    margin-bottom: 12px;
   }
   h4 {
     border-bottom: solid 1px #303030;
     color: #303030;
-    margin-bottom: 6px;
+    font-weight: 500;
+    margin-bottom: 9px;
     padding-bottom: 6px;
   }
   p {
-    line-height: 1.5em;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 15px;
+    line-height: 168%;
+  }
+  b {
+    font-weight: 400;
   }
 }
 button,
@@ -136,16 +144,16 @@ button.nav.current,
   }
   .marquee .marquee-content {
     max-width: 600px;
-    margin-top: 9em;
-    margin-left: auto;
-    margin-right: auto;
+    margin-top: 30px;
+    margin-left: 18px;
+    margin-right: 18px;
   }
   .marquee .marquee-content p {
     font-family: -apple-system, BlinkMacSystemFont, Helvetica, Arial, sans-serif, Apple Color Emoji;
     font-weight: 100;
   }
   .marquee .marquee-nav {
-    height: 15px;
+    height: 42px;
     padding: 30px;
   }
   .marquee .marquee-nav .home {
@@ -158,7 +166,9 @@ button.nav.current,
 }
 @media only screen and (min-width: 544px) {
   .marquee .marquee-content {
-    margin-top: 12em;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 30px;
   }
 }
 .pill {
@@ -202,6 +212,10 @@ button.nav.current,
     padding-left: 15px;
     position: absolute;
     top: 0;
+  }
+  main {
+    display: flex;
+    flex-direction: column;
   }
   .col {
     display: inline-block;
