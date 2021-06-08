@@ -1,0 +1,335 @@
+@-moz-keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@-webkit-keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+.fadeIn {
+  -webkit-animation: fade-in 1.5s ease;
+  -moz-animation: fade-in 1.5s ease;
+  animation: fade-in 1.5s ease;
+}
+@-moz-keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@-webkit-keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+* {
+  box-sizing: border-box;
+}
+
+@media only screen and (min-width: 0) {
+	html {
+		border: 0;
+		box-sizing: border-box;
+		color: text;
+		display: block;
+		height: 100vh;
+		margin: 0;
+    	padding: 0;
+    	width: 100vw;
+	}
+	/* DEV */
+	html::before {
+		color: black;
+		content: 'iphone';
+		position: absolute;
+		z-index: 999999;
+	}
+	body {
+		background: black;
+		border: 0;
+		color: white;
+		font-family: -apple-system, BlinkMacSystemFont, Helvetica, Arial, sans-serif, Apple Color Emoji;
+		margin: 0;
+    }
+	nav {
+		-webkit-backdrop-filter: saturate(180%) blur(20px);
+		background-color: rgba(255,255,255,0.72);
+		backdrop-filter: saturate(180%) blur(20px);
+		display: flex;
+		flex-flow: row;
+		padding-top: 120px;
+		position: fixed;
+		top: -120px;
+		width: 100%;
+		z-index: 999;
+	}
+	nav * {
+		-webkit-user-select: none;
+		user-select: none;
+	}
+	nav ul {
+		list-style: none;
+		margin: 0;
+		padding: 3px 0;
+		width: 100%;
+	}
+	nav ul#links {
+		float: right;
+		padding-right: 18px;
+		position: relative;
+		text-align: right;
+		transition: all 150ms;
+	}
+	nav ul#title-block {
+		float: left;
+		padding-left: 18px;
+		text-align: left;
+		transition: all 150ms;
+	}
+	nav ul li {
+		align-self: center;
+		display: inline-block;
+		margin: 0 6px;
+		padding: 3px;
+	}
+	nav ul li a {
+		color: rgba(0,0,0,1.0);
+		cursor: pointer;
+		display: block;
+		font-size: 12px;
+		font-weight: 400;
+		letter-spacing: -.01em;
+		margin-top: auto;
+		margin-bottom: auto;
+		text-align: center;
+		text-decoration: none;
+		transition: all 75ms;
+		white-space: nowrap;
+	}
+	nav ul li a[current] {
+		color: rgba(0,0,0,0.6);
+	}
+	nav ul li a:hover {
+		color: #0071e3;
+	}
+	nav ul li#contact a {
+		background: #0071e3;
+		border-radius: 3px;
+		box-shadow: 0 3px 9px rgba(0,0,0,0.3);
+		color: white;
+		padding: 6px 12px;
+	}
+	nav ul li#title a {
+		font-size: 1.6rem;
+		font-weight: 600;
+	}
+	footer {
+		background: black;
+		color: rgba(255, 255, 255, 0.3);
+		font-size: 9px;
+		padding: 24px 0;
+		text-align: center;
+		-webkit-user-select: none;
+		user-select: none;
+	}
+	.section {
+		background: linear-gradient(180deg, rgba(15,15,15,1) 0%, rgba(0,0,0,1) 100%);;
+		height: auto;
+		padding: auto 12rem;
+		z-index: 10;
+	}
+	.section.cover {
+		background: transparent;
+		height: 100vh;
+		overflow: hidden;
+		text-align: center;
+		z-index: 0;
+	}
+	.section.cover h1 {
+		color: white;
+		size: 9rem;
+	}
+	.section.cover video {
+		animation-name: fade-in;
+		animation-duration: 12s;
+		animation-iteration-count: 1;
+		bottom: 0;
+		min-width: 100%; 
+		min-height: 100%;
+		position: fixed;
+		right: 0;
+		-webkit-user-select: none;
+		-ms-user-select: none;
+		user-select: none;
+		width: auto;
+		z-index: -999;
+	}
+	.section .large-text-block {
+		align-items: center;
+		display: flex;
+		justify-content: center;
+		padding-bottom: 64px;
+		padding-top: 64px;
+	}
+	.section .centered-text-block-headline {
+		color: white;
+		display: block;
+		font-size: 1.2rem;
+		font-weight: 400;
+		line-height: 2.4rem;
+		max-width: 960px;
+		margin-bottom: auto;
+		margin-left: 1.6rem;
+		margin-right: 1.6rem;
+		margin-top: auto;
+		padding-top: 64px;
+		text-align: center;
+	}
+	.section .centered-text-block-headline h2 {
+		background: -webkit-linear-gradient(15deg, #ff0a0a, #333);
+		-webkit-background-clip: text;
+		-webkit-text-fill-color: transparent;
+		font-size: 2.6rem;
+		font-weight: 400;
+		line-height: 3rem;
+		margin-bottom: 1rem;
+	}
+	.centered-text-block-headline.intro {
+		left: 0;
+		position: absolute;
+		right: 0;
+		top: calc(100vh + 128px);
+	}
+	.section.gradient {
+		background: linear-gradient(180deg, rgba(0,0,0,0) 0%, rgba(0,0,0,1) 100%);
+		height: 50vh;
+		margin-bottom: -20px;
+		top: -20px;
+		z-index: 666;
+	}
+	.section.window-height {
+		height: 100vh;
+	}
+	.skullhead {
+		animation-name: fade-in;
+		animation-duration: 3s;
+		animation-iteration-count: 1;
+		height: 12rem;
+		left: 0;
+		margin-left: auto;
+		margin-right: auto;
+		position: sticky;
+		right: 0;
+		text-align: center;
+		top: 25%;
+		transition: all 300ms;
+		transition-delay: 300ms;
+		width: auto;
+		z-index: 666;
+	}
+}
+
+@media only screen and (min-width: 414px) {	
+	/* DEV */
+	html::before {
+		content: 'big iphone';
+		position: absolute;
+	}
+	.section.cover h1 {
+		height: 21rem;
+		top: 20rem;
+	}
+	.skullhead {
+		height: 21rem;
+		top: 12rem;
+	}
+}
+
+@media only screen and (min-width: 1024px) {
+	/* DEV */
+	html::before {
+		content: 'ipad';
+		position: absolute;
+	}
+	.skullhead {
+		height: 21rem;
+		top: 12rem;
+	}
+}
+
+
+@media only screen and (min-width: 1366px) {
+	/* DEV */
+	html::before {
+		content: 'laptop';
+		position: absolute;
+	}
+	nav ul#links {
+		padding-right: 24px;
+	}
+	nav ul#title-block {
+		padding-left: 24px;
+	}
+	.header .right {
+		height: 54px;
+	}
+	.header .right button {
+		border-radius: 16px;
+		font-size: 16px;
+		height: 32px;
+		line-height: 1.33;
+	}
+	.section.gradient {
+		height: 75vh;
+	}
+	.section .large-text-block {
+		padding-bottom: 64px;
+		padding-top: 64px;
+	}
+	.section .centered-text-block-headline {
+		font-size: 2rem;
+		line-height: 3.6rem;
+		margin-bottom: auto;
+		margin-left: auto;
+		margin-right: auto;
+		margin-top: auto;
+		padding-top: 64px;
+	}
+	.section.centered-text-block-headline.intro {
+		margin-left: auto;
+		margin-right: auto;
+	}
+	.skullhead {
+		height: 24rem;
+	}
+}
