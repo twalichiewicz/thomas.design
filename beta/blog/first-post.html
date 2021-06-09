@@ -7,12 +7,15 @@
 	  <link href="https://fonts.googleapis.com/css?family=Merriweather:300,300i,400,400i,700,700i,900,900i" rel="stylesheet">
 	</head>
 
-	<body>
+	<body id="blog">
 	  <div class="container">
 		<nav>
 			<ul id="links">
+				<li id="home">
+					<a href="https://thomas.design"><img id="home-icon" src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/34/Home-icon.svg/1200px-Home-icon.svg.png"></a>
+				</li>
 				<li id="blog">
-					<a href="./blog/first-post.html" current>Blog</a>
+					<a href="./blog/first-post.html">Blog</a>
 				</li>
 				<li id="linkedin">
 					<a href="https://www.linkedin.com/in/twalichiewicz">LinkedIn</a>
@@ -27,15 +30,34 @@
 		</nav>
 		<div class="blog-header">
 			<img class="skullhead" src="../src/files/Skullhead.png" loading="lazy" width="3336" height="4776" alt="Skullhead">
+			<h1>Design In Everything</h1>
+		</div>
+		<div class="blog-post-navigation">
+			<ul>
+				<li>
+					<a href="#">Previous</a>
+				</li>
+				<li>
+					<a href="#">Next</a>
+				</li>
+			</ul>
 		</div>
 		<div class="blog-post-content">
-			<h3 class="blog-post-title">
-				Design in everything.
-			</h3>
-			<p class="blog-post-content">
-				Poops.
+			<div class="blog-post-header">
+				<h3 class="blog-post-title">
+					Design in everything.
+				</h3>
+				<span class="blog-post-metadata">
+					June 8, 2021 @ 19:26
+				</span>
+			</div>
+			<p class="blog-post-body">
+				For the longest time I've been thinking about writing a blog to document the things that I feel have been frustrating me with modern design. I figured what better place than my own website to air my feelings. 😄
 			</p>
 		</div>
 	  </div>
+	  <footer>
+			<div class="centered-text-block-headline">Designed, written, and coded by Thomas in San Francisco.</div>
+		</footer>
 	</body>
 </html>
