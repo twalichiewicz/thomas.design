@@ -130,7 +130,7 @@
 	nav ul li {
 		align-self: center;
 		display: inline-block;
-		margin: 0 6px;
+		margin: 0 3px;
 		padding: 3px;
 	}
 	nav ul li a {
@@ -345,8 +345,10 @@
 		min-height: 75vh;
 	}
 	.blog-post-header {
+		max-width: 700px;
 		padding-left: 1.5rem;
 		padding-right: 1.5rem;
+		text-align: left;
 	}
 	.blog-post-header .blog-post-title {
 		font-size: 2rem;
@@ -409,6 +411,9 @@
 		content: 'laptop';
 		position: absolute;
 	}
+	nav ul li {
+		margin: 0 6px;
+	}
 	nav ul#links {
 		padding-right: 24px;
 	}
@@ -446,6 +451,15 @@
 	}
 	.skullhead {
 		height: 24rem;
+	}
+	.blog-header {
+		margin-bottom: 90px;
+		margin-top: 90px;
+	}
+	.blog-post-header {
+		margin-left: auto;
+		margin-right: auto;
+		padding: 0;
 	}
 	.blog-post-content .blog-post-body {
 		margin-left: auto;
