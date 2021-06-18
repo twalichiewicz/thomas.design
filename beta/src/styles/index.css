@@ -302,7 +302,7 @@
 		z-index: 666;
 	}
 	.section.window-height {
-		height: 100vh;
+		min-height: 100vh;
 	}
 	.skullhead {
 		animation-name: fade-in;
