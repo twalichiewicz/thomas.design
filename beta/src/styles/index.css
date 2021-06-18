@@ -174,7 +174,8 @@
 		user-select: none;
 	}
 	.section {
-		background: linear-gradient(180deg, rgba(15,15,15,1) 0%, rgba(0,0,0,1) 100%);;
+		background: linear-gradient(180deg, rgba(15,15,15,1) 0%, rgba(0,0,0,1) 100%);
+		display: flex;
 		height: auto;
 		padding: auto 12rem;
 		z-index: 10;
@@ -205,6 +206,59 @@
 		width: auto;
 		z-index: -999;
 	}
+	
+	.section.flex {
+		display: flex;
+	}
+	.section.career {
+		
+	}
+	.section.career ul {
+		
+	}
+	
+	/* CAREER */
+	.career ul {
+		list-style: none; 
+	}
+	.career li {
+		margin-bottom: 4rem;
+	}
+	.career .career-company {
+		color: white;
+		display: block;
+		font-size: 6rem;
+		font-weight: 600;
+		line-height: 5rem;
+		margin-bottom: 1rem;
+	}
+	.career .career-years {
+		color: rgba(255,255,255,0.64);
+		font-size: 2rem;
+	}
+	.career ul li:nth-child(n+1) {
+		opacity: 100%;
+	}
+	.career ul li:nth-child(n+2) {
+		opacity: 80%;
+	}
+	.career ul li:nth-child(n+3) {
+		opacity: 60%;
+	}
+	.career ul li:nth-child(n+4) {
+		opacity: 40%;
+	}
+	.career ul li:nth-child(n+5) {
+		opacity: 20%;
+	}
+	
+	.content.centered {
+		margin-bottom: auto;
+		margin-left: auto;
+		margin-right: auto;
+		margin-top: auto;
+	}
+	
 	.section .large-text-block {
 		align-items: center;
 		display: flex;
@@ -223,7 +277,6 @@
 		margin-left: 1.6rem;
 		margin-right: 1.6rem;
 		margin-top: auto;
-		padding-top: 64px;
 		text-align: center;
 	}
 	.section .centered-text-block-headline h2 {
@@ -433,8 +486,7 @@
 		height: 75vh;
 	}
 	.section .large-text-block {
-		padding-bottom: 64px;
-		padding-top: 64px;
+		
 	}
 	.section .centered-text-block-headline {
 		font-size: 2rem;
@@ -443,7 +495,6 @@
 		margin-left: auto;
 		margin-right: auto;
 		margin-top: auto;
-		padding-top: 64px;
 	}
 	.section.centered-text-block-headline.intro {
 		margin-left: auto;
