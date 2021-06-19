@@ -174,7 +174,7 @@
 		user-select: none;
 	}
 	.section {
-		background: linear-gradient(180deg, rgba(15,15,15,1) 0%, rgba(0,0,0,1) 100%);
+		background: black;
 		display: flex;
 		height: auto;
 		padding: auto 12rem;
@@ -210,6 +210,10 @@
 	.section.flex {
 		display: flex;
 	}
+	.section.gradient {
+		background: linear-gradient(180deg, rgba(15,15,15,1) 0%, rgba(0,0,0,1) 100%);
+	}
+	
 	.section.career {
 		
 	}
@@ -220,37 +224,60 @@
 	/* CAREER */
 	.career ul {
 		list-style: none; 
+		margin: 0;
+		padding: 0;
+		transition: all 300ms;
 	}
 	.career li {
-		margin-bottom: 4rem;
+		margin-bottom: 2rem;
+		transition: all 300ms;
 	}
 	.career .career-company {
 		color: white;
 		display: block;
-		font-size: 6rem;
+		font-size: 3rem;
 		font-weight: 600;
-		line-height: 5rem;
-		margin-bottom: 1rem;
+		line-height: 4rem;
+		margin-bottom: 0rem;
 	}
 	.career .career-years {
 		color: rgba(255,255,255,0.64);
-		font-size: 2rem;
+		font-size: 1.2rem;
 	}
 	.career ul li:nth-child(n+1) {
 		opacity: 100%;
 	}
 	.career ul li:nth-child(n+2) {
+		filter: blur(0.00009rem);
+		font-size: ;
 		opacity: 80%;
 	}
+	.career ul li:nth-child(n+2) .career-company {
+		font-size: 2.75rem;
+	}
 	.career ul li:nth-child(n+3) {
+		filter: blur(0.0009rem);
 		opacity: 60%;
 	}
+	.career ul li:nth-child(n+3) .career-company {
+		font-size: 2.5rem;
+	}
 	.career ul li:nth-child(n+4) {
+		filter: blur(0.009rem);
 		opacity: 40%;
 	}
+	.career ul li:nth-child(n+4) .career-company {
+		font-size: 2.25rem;
+	}
 	.career ul li:nth-child(n+5) {
+		filter: blur(0.09rem);
+		font-size: ;
 		opacity: 20%;
 	}
+	.career ul li:nth-child(n+5) .career-company {
+		font-size: 2rem;
+	}
+	/* END CAREER */
 	
 	.content.centered {
 		margin-bottom: auto;
@@ -503,6 +530,43 @@
 	.skullhead {
 		height: 24rem;
 	}
+	
+	/* CAREER */
+	.career ul {
+		list-style: none; 
+	}
+	.career li {
+		margin-bottom: 4rem;
+	}
+	.career .career-company {
+		color: white;
+		display: block;
+		font-size: 6rem;
+		font-weight: 600;
+		line-height: 5rem;
+		margin-bottom: 1rem;
+	}
+	.career .career-years {
+		color: rgba(255,255,255,0.64);
+		font-size: 2rem;
+	}
+	.career ul li:nth-child(n+1) {
+		opacity: 100%;
+	}
+	.career ul li:nth-child(n+2) {
+		opacity: 80%;
+	}
+	.career ul li:nth-child(n+3) {
+		opacity: 60%;
+	}
+	.career ul li:nth-child(n+4) {
+		opacity: 40%;
+	}
+	.career ul li:nth-child(n+5) {
+		opacity: 20%;
+	}
+	/* END CAREER */
+	
 	.blog-header {
 		margin-bottom: 90px;
 		margin-top: 90px;
